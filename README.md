@@ -1,4 +1,4 @@
-# Hill Climb Racing – Pygame
+# Peakbound – Pygame
 
 A 2D physics-based driving game developed using **Python and Pygame**, inspired by the original *Hill Climb Racing*.
 
