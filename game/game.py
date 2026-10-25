@@ -14,4 +14,13 @@ class Game:
 
     def update(self, dt, keys):
         self.vehicle.update(dt,keys)
+    
+    def draw(self, screen):
+        screen.fill((135, 206, 235))
         
+        pg.draw.rect(
+        screen,
+        (70, 160, 70),
+        (0, 450, self.width, self.height - 450)
+    )
+        self.vehicle.draw(screen)
