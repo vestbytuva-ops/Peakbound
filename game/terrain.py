@@ -8,4 +8,5 @@ class Terrain:
 
         self.surface = pg.image.load(
             "assets/stages/terrain-surface.png"
-        )
+        ).convert_alpha()
+        

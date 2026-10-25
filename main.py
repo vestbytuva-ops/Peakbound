@@ -2,6 +2,7 @@ import os
 import pygame as pg
 
 from game.game import Game
+from game.terrain import Terrain
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
