@@ -8,6 +8,11 @@ class Vehicle:
         self.speed = 0
         self.acceleration = 200
         self.max_speed = 400
-    def update (self, dt, keys):
-        self.speed += self.acceleration * dt
-        pass
+
+    def update(self, dt, keys):
+        if keys[pg.K_d]:
+            self.speed += self.acceleration * dt
+        if keys[pg.K_a]:
+            self.speed -= self.acceleration * dt
+            
+        self.x += self.speed * dt
