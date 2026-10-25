@@ -16,7 +16,7 @@ def main():
     pg.display.set_caption("Peakbound")
 
     clock = pg.time.Clock()
-    game = Game((WIDTH, HEIGHT))
+    game = Game(WIDTH, HEIGHT)
 
     running = True
 
