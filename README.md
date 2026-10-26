@@ -56,7 +56,9 @@ HillClimbRacing/
 ├── assets/
 │   ├── images/
 │   ├── sounds/
+|   ├── stages/
 │   └── fonts/
+|   
 │
 ├── data/
 ├── saves/
