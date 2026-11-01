@@ -3,6 +3,7 @@ import pygame as pg
 
 from game.game import Game
 from game.terrain import Terrain
+from game.camera import Camera
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
