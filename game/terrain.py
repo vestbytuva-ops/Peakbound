@@ -2,7 +2,6 @@ from pathlib import Path
 
 import pygame as pg
 
-
 class Terrain:
     def __init__(self):
         # Punktene beskriver kjøreflaten fra start til mål i verdenskoordinater.
