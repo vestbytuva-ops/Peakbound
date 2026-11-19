@@ -85,3 +85,30 @@ class Game:
                 screen.blit(sign, rect)
 
  
+
+    def draw(self, screen):
+        self.draw_background(screen)
+        self.draw_markers(screen)
+        self.terrain.draw(screen, self.camera.x)
+        self.vehicle.draw(screen, self.camera.x)
+
+        distance = int(max(0, self.vehicle.x - START_X) / PIXELS_PER_METRE)
+        distance = min(distance, self.total_metres)
+        pg.draw.rect(screen, (37, 57, 54), (18, 18, 230, 70), border_radius=8)
+        screen.blit(self.font.render("Fjellveien", True, (251, 245, 221)), (32, 27))
+        status = f"{distance} / {self.total_metres} m"
+        screen.blit(self.font.render(status, True, (222, 241, 190)), (32, 56))
+        help_text = self.font.render("D / høyrepil   Gass     A / venstrepil   Brems og rygg     R   Omstart",
+                                     True, (40, 55, 45))
+        rect = help_text.get_rect(topright=(self.width - 32, 31))
+        pg.draw.rect(screen, (245, 246, 226), rect.inflate(22, 14), border_radius=8)
+        screen.blit(help_text, rect)
+
+        if self.finished:
+            box = pg.Rect(0, 0, 384, 104)
+            box.midtop = (self.width // 2, 104)
+            pg.draw.rect(screen, (37, 57, 54), box, border_radius=10)
+            title = self.title_font.render("Du er i mål!", True, (251, 245, 221))
+            hint = self.font.render("Trykk R for å kjøre igjen", True, (222, 241, 190))
+            screen.blit(title, title.get_rect(center=(box.centerx, box.top + 33)))
+            screen.blit(hint, hint.get_rect(center=(box.centerx, box.top + 74)))
