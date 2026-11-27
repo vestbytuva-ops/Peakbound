@@ -1,0 +1,154 @@
+' Peakbound – redigerbar UML-kilde.
+' Hver blokk beskriver én side i Peakbound-UML.drawio.
+@startuml Peakbound_Klassediagram
+title Peakbound – Klassediagram
+hide empty members
+skinparam backgroundColor #F7FAFC
+skinparam ArrowColor #225475
+skinparam classBorderColor #225475
+skinparam classBackgroundColor #FFFFFF
+skinparam classFontColor #173042
+
+class Game #E4F1FB {
+  +state: str
+  +run: Run [0..1]
+  +ghost: GhostReplay [0..1]
+  +start_run()
+  +update(dt, keys)
+  +finish_run(reason)
+}
+class Run #E4F5EF {
+  +vehicle: Vehicle
+  +elapsed: float
+  +distance: float
+  +step(dt, keys)
+}
+class Vehicle #E4F5EF {
+  +x: float
+  +y: float
+  +velocity: Vector2
+  +angle: float
+  +update(dt, keys, terrain)
+  +draw(screen, camera_x)
+}
+class Terrain #E4F5EF {
+  +world: WorldSpec
+  +height_at(x): float
+  +slope_at(x): float
+  +draw(screen, camera_x)
+}
+class WorldSpec #E4F5EF {
+  +id: str
+  +name: str
+  +difficulty: str
+  +accent: tuple
+}
+class ProgressStore #FFF3DE {
+  +balance: int
+  +upgrades: dict
+  +records(world, mode)
+  +save_run(…)
+}
+class RunRecord #FFF3DE {
+  +world: str
+  +mode: str
+  +vehicle: str
+  +distance: float
+  +seconds: float
+  +coins: int
+  +deliveries: int
+  +score: int {readOnly}
+}
+class ReplayRecorder #FFF3DE {
+  +interval: float
+  +capture(elapsed, pose)
+  +finish(elapsed, pose)
+}
+class GhostReplay #FFF3DE {
+  +frames: list
+  +pose_at(elapsed): tuple | None
+}
+
+Game "1" *-- "0..1" Run : aktiv tur
+Game "1" *-- "1" ProgressStore
+Game "1" *-- "0..1" GhostReplay : valgt spøkelse
+Run "1" *-- "1" Vehicle : bil for turen
+Run "1" *-- "1" ReplayRecorder
+Run "0..*" -- "1" Terrain : bruker bane
+Vehicle ..> Terrain : beregner kontakt
+Terrain "0..*" -- "1" WorldSpec : banekonfigurasjon
+ProgressStore "1" -- "0..*" RunRecord : lagrer
+
+caption Diagrammet viser et utvalg medlemmer. Camera, UI og Scenery står for visningen.
+@enduml
+
+@startuml Peakbound_Tilstandsdiagram
+title Peakbound – Spillets tilstander
+skinparam backgroundColor #F7FAFC
+skinparam ArrowColor #225475
+skinparam state {
+  BackgroundColor #E4F1FB
+  BorderColor #225475
+  FontColor #173042
+}
+state "Hovedmeny" as Meny
+state "Garasje" as Garasje
+state "Tidligere turer" as Historikk
+state "Kjører" as Kjorer #E4F5EF
+state "På pause" as Pause
+state "Resultat" as Resultat #FFF3DE
+
+[*] --> Meny
+Meny --> Garasje : velg garasje
+Garasje --> Meny : tilbake
+Meny --> Historikk : velg tidligere turer
+Historikk --> Meny : tilbake / velg opptak
+Meny --> Kjorer : start tur
+Kjorer --> Pause : pause
+Pause --> Kjorer : fortsett
+Pause --> Resultat : avslutt turen
+Kjorer --> Resultat : velt / tom tank
+Resultat --> Kjorer : kjør igjen / slå turen
+Resultat --> Meny : til hovedmeny
+
+caption Begge modusene bruker samme tilstander. Fjellpost gir i tillegg pakkeskade og leveringer under kjøring.
+@enduml
+
+@startuml Peakbound_Sekvensdiagram
+title Peakbound – Spøkelsesbil og lagring av tur
+skinparam backgroundColor #F7FAFC
+skinparam ArrowColor #225475
+skinparam ParticipantBackgroundColor #E4F1FB
+skinparam ParticipantBorderColor #225475
+hide footbox
+actor Spiller
+participant Game
+participant ProgressStore
+participant GhostReplay
+participant Run
+
+Spiller -> Game : åpne tidligere turer
+Game -> ProgressStore : records(world, mode)
+ProgressStore --> Game : tidligere turer
+Spiller -> Game : velg opptak
+Spiller -> Game : start kjøring
+create Run
+Game -> Run : Run(…) og start opptak
+create GhostReplay
+Game -> GhostReplay : GhostReplay(record.frames)
+
+loop mens turen pågår
+  Game -> Run : step(dt, keys)
+  Game -> GhostReplay : pose_at(elapsed)
+end
+
+note right of Game: Etter minst ett sekund eller med opptjente mynter\nklargjør Game opptaket.
+Game -> ProgressStore : save_run(…)
+alt lagring lykkes
+  ProgressStore --> Game : RunRecord
+  Game --> Spiller : vis resultat og rekord
+else skrivefeil
+  ProgressStore --> Game : ingen lagret tur
+  Game --> Spiller : vis lagringsfeil
+end
+@enduml

@@ -1,0 +1,840 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" compressed="false">
+  <diagram id="peakbound-1" name="Klassediagram">
+    <mxGraphModel grid="0" gridSize="10" dx="1450" dy="1055" guides="1" tooltips="1" connect="1" page="1" pageScale="1" pageWidth="1450" pageHeight="1055" background="#f7fafc">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="node-Game" value="" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#225475;">
+          <mxGeometry as="geometry" x="72" y="210" width="338" height="203" />
+        </mxCell>
+        <mxCell id="node-Run" value="" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#216359;">
+          <mxGeometry as="geometry" x="550" y="210" width="338" height="203" />
+        </mxCell>
+        <mxCell id="node-Vehicle" value="" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#216359;">
+          <mxGeometry as="geometry" x="1028" y="210" width="350" height="203" />
+        </mxCell>
+        <mxCell id="node-ProgressStore" value="" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#885127;">
+          <mxGeometry as="geometry" x="72" y="504" width="338" height="181" />
+        </mxCell>
+        <mxCell id="node-ReplayRecorder" value="" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#885127;">
+          <mxGeometry as="geometry" x="550" y="504" width="338" height="159" />
+        </mxCell>
+        <mxCell id="node-Terrain" value="" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#216359;">
+          <mxGeometry as="geometry" x="1028" y="504" width="350" height="181" />
+        </mxCell>
+        <mxCell id="node-RunRecord" value="" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#885127;">
+          <mxGeometry as="geometry" x="72" y="777" width="338" height="159" />
+        </mxCell>
+        <mxCell id="node-GhostReplay" value="" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#885127;">
+          <mxGeometry as="geometry" x="550" y="777" width="338" height="137" />
+        </mxCell>
+        <mxCell id="node-WorldSpec" value="" vertex="1" parent="1" style="rounded=0;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=#ffffff;strokeColor=#216359;">
+          <mxGeometry as="geometry" x="1028" y="777" width="350" height="159" />
+        </mxCell>
+        <mxCell id="eyebrow" parent="1" value="PEAKBOUND  /  IT2" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=14;fontColor=#216359;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="72" y="34" width="620" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" value="Klassediagram" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=42;fontColor=#173042;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="69" y="61" width="1310" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" value="Ansvar og relasjoner i spillet, med vekt på en tur, banen og lagrede forsøk." vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=18;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="72" y="124" width="1305" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="header-rule" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#c9d8e4;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="72" y="172" as="sourcePoint" />
+            <mxPoint x="1378" y="172" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="folio" parent="1" value="1 / 3" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=right;spacing=0;fontFamily=Segoe UI;fontSize=14;fontColor=#415d72;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1285" y="37" width="92" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Game-name" parent="node-Game" value="Game" vertex="1" style="text;html=0;strokeColor=none;fillColor=#e4f1fb;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=20;fontColor=#225475;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1" y="1" width="336" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Game-attr0" parent="node-Game" value="+ state: str" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="46" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Game-attr1" parent="node-Game" value="+ run: Run | None" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="68" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Game-attr2" parent="node-Game" value="+ ghost: GhostReplay | None" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="90" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Game-divider" parent="node-Game" value="" vertex="1" style="text;html=0;strokeColor=none;fillColor=#c9d8e4;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1" y="113" width="336" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Game-op0" parent="node-Game" value="+ start_run()" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="123" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Game-op1" parent="node-Game" value="+ update(dt, keys)" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="145" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Game-op2" parent="node-Game" value="+ finish_run(reason)" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="167" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Run-name" parent="node-Run" value="Run" vertex="1" style="text;html=0;strokeColor=none;fillColor=#e4f5ef;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=20;fontColor=#216359;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1" y="1" width="336" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Run-attr0" parent="node-Run" value="+ vehicle: Vehicle" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="46" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Run-attr1" parent="node-Run" value="+ elapsed: float" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="68" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Run-attr2" parent="node-Run" value="+ distance: float" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="90" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Run-divider" parent="node-Run" value="" vertex="1" style="text;html=0;strokeColor=none;fillColor=#c9d8e4;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1" y="113" width="336" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Run-op0" parent="node-Run" value="+ step(dt, keys)" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="123" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Vehicle-name" parent="node-Vehicle" value="Vehicle" vertex="1" style="text;html=0;strokeColor=none;fillColor=#e4f5ef;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=20;fontColor=#216359;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1" y="1" width="348" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Vehicle-attr0" parent="node-Vehicle" value="+ x, y: float" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="46" width="322" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Vehicle-attr1" parent="node-Vehicle" value="+ velocity: Vector2" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="68" width="322" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Vehicle-attr2" parent="node-Vehicle" value="+ angle: float" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="90" width="322" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Vehicle-divider" parent="node-Vehicle" value="" vertex="1" style="text;html=0;strokeColor=none;fillColor=#c9d8e4;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1" y="113" width="348" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Vehicle-op0" parent="node-Vehicle" value="+ update(dt, keys, terrain)" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="123" width="322" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Vehicle-op1" parent="node-Vehicle" value="+ draw(screen, camera_x)" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="145" width="322" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-ProgressStore-name" parent="node-ProgressStore" value="ProgressStore" vertex="1" style="text;html=0;strokeColor=none;fillColor=#fff3de;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=20;fontColor=#885127;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1" y="1" width="336" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="node-ProgressStore-attr0" parent="node-ProgressStore" value="+ balance: int" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="46" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-ProgressStore-attr1" parent="node-ProgressStore" value="+ upgrades: dict" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="68" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-ProgressStore-divider" parent="node-ProgressStore" value="" vertex="1" style="text;html=0;strokeColor=none;fillColor=#c9d8e4;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1" y="91" width="336" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="node-ProgressStore-op0" parent="node-ProgressStore" value="+ records(world, mode)" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="101" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-ProgressStore-op1" parent="node-ProgressStore" value="+ save_run(…)" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="123" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-ReplayRecorder-name" parent="node-ReplayRecorder" value="ReplayRecorder" vertex="1" style="text;html=0;strokeColor=none;fillColor=#fff3de;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=20;fontColor=#885127;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1" y="1" width="336" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="node-ReplayRecorder-attr0" parent="node-ReplayRecorder" value="+ interval: float" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="46" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-ReplayRecorder-divider" parent="node-ReplayRecorder" value="" vertex="1" style="text;html=0;strokeColor=none;fillColor=#c9d8e4;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1" y="69" width="336" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="node-ReplayRecorder-op0" parent="node-ReplayRecorder" value="+ capture(elapsed, pose)" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="79" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-ReplayRecorder-op1" parent="node-ReplayRecorder" value="+ finish(elapsed, pose)" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="101" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Terrain-name" parent="node-Terrain" value="Terrain" vertex="1" style="text;html=0;strokeColor=none;fillColor=#e4f5ef;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=20;fontColor=#216359;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1" y="1" width="348" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Terrain-attr0" parent="node-Terrain" value="+ world: WorldSpec" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="46" width="322" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Terrain-divider" parent="node-Terrain" value="" vertex="1" style="text;html=0;strokeColor=none;fillColor=#c9d8e4;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1" y="69" width="348" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Terrain-op0" parent="node-Terrain" value="+ height_at(x): float" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="79" width="322" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Terrain-op1" parent="node-Terrain" value="+ slope_at(x): float" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="101" width="322" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-Terrain-op2" parent="node-Terrain" value="+ draw(screen, camera_x)" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="123" width="322" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-RunRecord-name" parent="node-RunRecord" value="RunRecord" vertex="1" style="text;html=0;strokeColor=none;fillColor=#fff3de;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=20;fontColor=#885127;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1" y="1" width="336" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="node-RunRecord-attr0" parent="node-RunRecord" value="+ world, mode, vehicle: str" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="46" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-RunRecord-attr1" parent="node-RunRecord" value="+ distance, seconds: float" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="68" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-RunRecord-attr2" parent="node-RunRecord" value="+ coins, deliveries: int" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="90" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-RunRecord-attr3" parent="node-RunRecord" value="+ score: int  {readOnly}" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="112" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-RunRecord-divider" parent="node-RunRecord" value="" vertex="1" style="text;html=0;strokeColor=none;fillColor=#c9d8e4;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1" y="135" width="336" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="node-GhostReplay-name" parent="node-GhostReplay" value="GhostReplay" vertex="1" style="text;html=0;strokeColor=none;fillColor=#fff3de;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=20;fontColor=#885127;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1" y="1" width="336" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="node-GhostReplay-attr0" parent="node-GhostReplay" value="+ frames: list" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="46" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-GhostReplay-divider" parent="node-GhostReplay" value="" vertex="1" style="text;html=0;strokeColor=none;fillColor=#c9d8e4;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1" y="69" width="336" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="node-GhostReplay-op0" parent="node-GhostReplay" value="+ pose_at(elapsed): tuple | None" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="79" width="310" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-WorldSpec-name" parent="node-WorldSpec" value="WorldSpec" vertex="1" style="text;html=0;strokeColor=none;fillColor=#e4f5ef;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=20;fontColor=#216359;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1" y="1" width="348" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="node-WorldSpec-attr0" parent="node-WorldSpec" value="+ id, name: str" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="46" width="322" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-WorldSpec-attr1" parent="node-WorldSpec" value="+ difficulty: str" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="68" width="322" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-WorldSpec-attr2" parent="node-WorldSpec" value="+ accent: tuple" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Consolas;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="14" y="90" width="322" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="node-WorldSpec-divider" parent="node-WorldSpec" value="" vertex="1" style="text;html=0;strokeColor=none;fillColor=#c9d8e4;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1" y="113" width="348" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="active" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=diamond;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;exitX=1;exitY=0.227;exitDx=0;exitDy=0;entryX=0;entryY=0.227;entryDx=0;entryDy=0;" source="node-Game" target="node-Run">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="256" as="sourcePoint" />
+            <mxPoint x="550" y="256" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="active-role" parent="1" value="aktiv tur" vertex="1" style="text;html=0;strokeColor=none;fillColor=#f7fafc;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="427" y="232" width="106" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="active-n0" parent="1" value="1" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="424" y="261" width="43" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="active-n1" parent="1" value="0..1" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="514" y="261" width="43" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="store" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=diamond;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;exitX=0.26;exitY=1;exitDx=0;exitDy=0;entryX=0.26;entryY=0;entryDx=0;entryDy=0;" source="node-Game" target="node-ProgressStore">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="413" as="sourcePoint" />
+            <mxPoint x="160" y="504" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="store-n0" parent="1" value="1" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="171" y="420" width="43" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="store-n1" parent="1" value="1" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="171" y="481" width="43" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="ghost" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=diamond;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;exitX=1;exitY=0.739;exitDx=0;exitDy=0;entryX=0;entryY=0.445;entryDx=0;entryDy=0;" source="node-Game" target="node-GhostReplay">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="360" as="sourcePoint" />
+            <mxPoint x="550" y="838" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="475" y="360" />
+              <mxPoint x="475" y="838" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ghost-role" parent="1" value="valgt spøkelse" vertex="1" style="text;html=0;strokeColor=none;fillColor=#f7fafc;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="416" y="700" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ghost-n0" parent="1" value="1" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="421" y="367" width="43" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="ghost-n1" parent="1" value="0..1" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="512" y="843" width="43" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="run-car" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=diamond;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;exitX=1;exitY=0.232;exitDx=0;exitDy=0;entryX=0;entryY=0.232;entryDx=0;entryDy=0;" source="node-Run" target="node-Vehicle">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="888" y="257" as="sourcePoint" />
+            <mxPoint x="1028" y="257" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="run-car-role" parent="1" value="bil for turen" vertex="1" style="text;html=0;strokeColor=none;fillColor=#f7fafc;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="905" y="232" width="104" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="run-car-n0" parent="1" value="1" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="904" y="264" width="43" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="run-car-n1" parent="1" value="1" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1006" y="264" width="43" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="run-terrain" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;exitX=1;exitY=0.798;exitDx=0;exitDy=0;entryX=0;entryY=0.271;entryDx=0;entryDy=0;" source="node-Run" target="node-Terrain">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="888" y="372" as="sourcePoint" />
+            <mxPoint x="1028" y="553" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="962" y="372" />
+              <mxPoint x="962" y="553" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="run-terrain-role" parent="1" value="bruker bane" vertex="1" style="text;html=0;strokeColor=none;fillColor=#f7fafc;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="914" y="478" width="104" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="run-terrain-n0" parent="1" value="0..*" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="899" y="378" width="43" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="run-terrain-n1" parent="1" value="1" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1009" y="561" width="43" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="surface" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=open;endFill=1;startArrow=none;startFill=1;dashed=1;dashPattern=6 5;fontFamily=Segoe UI;exitX=0.44;exitY=1;exitDx=0;exitDy=0;entryX=0.44;entryY=0;entryDx=0;entryDy=0;" source="node-Vehicle" target="node-Terrain">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1182" y="413" as="sourcePoint" />
+            <mxPoint x="1182" y="504" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="surface-role" parent="1" value="beregner kontakt" vertex="1" style="text;html=0;strokeColor=none;fillColor=#f7fafc;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1120" y="448" width="124" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="run-recorder" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=diamond;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;exitX=0.485;exitY=1;exitDx=0;exitDy=0;entryX=0.485;entryY=0;entryDx=0;entryDy=0;" source="node-Run" target="node-ReplayRecorder">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="714" y="413" as="sourcePoint" />
+            <mxPoint x="714" y="504" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="run-recorder-n0" parent="1" value="1" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="730" y="420" width="43" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="run-recorder-n1" parent="1" value="1" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="730" y="481" width="43" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="profile" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;exitX=0.486;exitY=1;exitDx=0;exitDy=0;entryX=0.486;entryY=0;entryDx=0;entryDy=0;" source="node-Terrain" target="node-WorldSpec">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1198" y="685" as="sourcePoint" />
+            <mxPoint x="1198" y="777" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="profile-role" parent="1" value="banekonfigurasjon" vertex="1" style="text;html=0;strokeColor=none;fillColor=#f7fafc;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1132" y="719" width="132" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="profile-n0" parent="1" value="0..*" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1212" y="691" width="43" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="profile-n1" parent="1" value="1" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1212" y="754" width="43" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="records" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;exitX=0.488;exitY=1;exitDx=0;exitDy=0;entryX=0.488;entryY=0;entryDx=0;entryDy=0;" source="node-ProgressStore" target="node-RunRecord">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="237" y="685" as="sourcePoint" />
+            <mxPoint x="237" y="777" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="records-role" parent="1" value="lagrer" vertex="1" style="text;html=0;strokeColor=none;fillColor=#f7fafc;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="204" y="719" width="66" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="records-n0" parent="1" value="1" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="251" y="692" width="43" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="records-n1" parent="1" value="0..*" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=13;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="251" y="754" width="43" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="footer-rule" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#c9d8e4;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="72" y="969" as="sourcePoint" />
+            <mxPoint x="1378" y="969" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-composition" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=diamond;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="76" y="1009" as="sourcePoint" />
+            <mxPoint x="120" y="1009" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-composition-label" parent="1" value="Komposisjon" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=14;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="135" y="997" width="139" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-association" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="293" y="1009" as="sourcePoint" />
+            <mxPoint x="338" y="1009" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-association-label" parent="1" value="Assosiasjon" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=14;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="351" y="997" width="132" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-use" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=open;endFill=1;startArrow=none;startFill=1;dashed=1;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="524" y="1009" as="sourcePoint" />
+            <mxPoint x="569" y="1009" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-use-label" parent="1" value="Avhengighet" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=14;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="581" y="997" width="148" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-scope" parent="1" value="Diagrammet viser et utvalg medlemmer. Camera, UI og Scenery står for visningen." vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=right;spacing=0;fontFamily=Segoe UI;fontSize=14;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="607" y="997" width="770" height="23" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="peakbound-2" name="Spillets tilstander">
+    <mxGraphModel grid="0" gridSize="10" dx="1450" dy="860" guides="1" tooltips="1" connect="1" page="1" pageScale="1" pageWidth="1450" pageHeight="860" background="#f7fafc">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="node-menu" value="" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=14;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=#e4f1fb;strokeColor=#225475;">
+          <mxGeometry as="geometry" x="568" y="249" width="314" height="105" />
+        </mxCell>
+        <mxCell id="node-garage" value="" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=14;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=#e4f1fb;strokeColor=#225475;">
+          <mxGeometry as="geometry" x="80" y="250" width="287" height="104" />
+        </mxCell>
+        <mxCell id="node-history" value="" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=14;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=#fff3de;strokeColor=#885127;">
+          <mxGeometry as="geometry" x="1085" y="250" width="288" height="104" />
+        </mxCell>
+        <mxCell id="node-playing" value="" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=14;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=#e4f5ef;strokeColor=#216359;">
+          <mxGeometry as="geometry" x="568" y="518" width="314" height="105" />
+        </mxCell>
+        <mxCell id="node-paused" value="" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=14;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=#e4f1fb;strokeColor=#225475;">
+          <mxGeometry as="geometry" x="80" y="518" width="287" height="105" />
+        </mxCell>
+        <mxCell id="node-result" value="" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=14;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=#fff3de;strokeColor=#885127;">
+          <mxGeometry as="geometry" x="1085" y="518" width="288" height="105" />
+        </mxCell>
+        <mxCell id="eyebrow" parent="1" value="PEAKBOUND  /  IT2" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=14;fontColor=#216359;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="72" y="34" width="620" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" value="Spillets tilstander" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=42;fontColor=#173042;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="69" y="61" width="1310" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" value="Fra oppstart til kjøring, og videre til pause, resultat eller en ny tur." vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=18;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="72" y="124" width="1305" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="header-rule" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#c9d8e4;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="72" y="172" as="sourcePoint" />
+            <mxPoint x="1378" y="172" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="folio" parent="1" value="2 / 3" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=right;spacing=0;fontFamily=Segoe UI;fontSize=14;fontColor=#415d72;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1285" y="37" width="92" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="node-menu-name" parent="node-menu" value="Hovedmeny" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=23;fontColor=#225475;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="12" y="16" width="290" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="node-menu-detail" parent="node-menu" value="Velg fjell, bil og modus" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=16;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="12" y="53" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="node-garage-name" parent="node-garage" value="Garasje" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=23;fontColor=#225475;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="12" y="16" width="263" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="node-garage-detail" parent="node-garage" value="Kjøp oppgraderinger" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=16;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="12" y="53" width="263" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="node-history-name" parent="node-history" value="Tidligere turer" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=23;fontColor=#885127;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="12" y="16" width="264" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="node-history-detail" parent="node-history" value="Velg et opptak å kjøre mot" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=16;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="12" y="53" width="264" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="node-playing-name" parent="node-playing" value="Kjører" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=23;fontColor=#216359;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="12" y="16" width="290" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="node-playing-detail" parent="node-playing" value="Oppdater fysikk og opptak" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=16;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="12" y="53" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="node-paused-name" parent="node-paused" value="På pause" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=23;fontColor=#225475;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="12" y="16" width="263" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="node-paused-detail" parent="node-paused" value="Fysikken står stille" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=16;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="12" y="53" width="263" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="node-result-name" parent="node-result" value="Resultat" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=23;fontColor=#885127;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="12" y="16" width="264" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="node-result-detail" parent="node-result" value="Vis utfallet av turen" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=16;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="12" y="53" width="264" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="1" value="" vertex="1" style="ellipse;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=#173042;strokeColor=#173042;">
+          <mxGeometry x="713" y="198" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="init" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=block;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" source="start" target="node-menu">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="725" y="222" as="sourcePoint" />
+            <mxPoint x="725" y="249" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="open-garage" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=block;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;exitX=0;exitY=0.238;exitDx=0;exitDy=0;entryX=1;entryY=0.231;entryDx=0;entryDy=0;" source="node-menu" target="node-garage">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="568" y="274" as="sourcePoint" />
+            <mxPoint x="367" y="274" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="open-garage-caption" parent="1" value="Velg garasje" vertex="1" style="text;html=0;strokeColor=none;fillColor=#f7fafc;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="392" y="249" width="152" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="leave-garage" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=block;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;exitX=1;exitY=0.779;exitDx=0;exitDy=0;entryX=0;entryY=0.781;entryDx=0;entryDy=0;" source="node-garage" target="node-menu">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="367" y="331" as="sourcePoint" />
+            <mxPoint x="568" y="331" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="leave-garage-caption" parent="1" value="Tilbake" vertex="1" style="text;html=0;strokeColor=none;fillColor=#f7fafc;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="402" y="332" width="132" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="open-history" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=block;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;exitX=1;exitY=0.238;exitDx=0;exitDy=0;entryX=0;entryY=0.231;entryDx=0;entryDy=0;" source="node-menu" target="node-history">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="882" y="274" as="sourcePoint" />
+            <mxPoint x="1085" y="274" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="open-history-caption" parent="1" value="Velg tidligere turer" vertex="1" style="text;html=0;strokeColor=none;fillColor=#f7fafc;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="899" y="248" width="170" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="leave-history" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=block;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;exitX=0;exitY=0.779;exitDx=0;exitDy=0;entryX=1;entryY=0.781;entryDx=0;entryDy=0;" source="node-history" target="node-menu">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1085" y="331" as="sourcePoint" />
+            <mxPoint x="882" y="331" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="leave-history-caption" parent="1" value="Tilbake / velg opptak" vertex="1" style="text;html=0;strokeColor=none;fillColor=#f7fafc;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="896" y="332" width="175" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="start-run" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=block;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;exitX=0.408;exitY=1;exitDx=0;exitDy=0;entryX=0.408;entryY=0;entryDx=0;entryDy=0;" source="node-menu" target="node-playing">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="696" y="354" as="sourcePoint" />
+            <mxPoint x="696" y="518" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="start-run-caption" parent="1" value="Start tur" vertex="1" style="text;html=0;strokeColor=none;fillColor=#f7fafc;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="646" y="412" width="100" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="pause" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=block;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;exitX=0;exitY=0.219;exitDx=0;exitDy=0;entryX=1;entryY=0.219;entryDx=0;entryDy=0;" source="node-playing" target="node-paused">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="568" y="541" as="sourcePoint" />
+            <mxPoint x="367" y="541" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pause-caption" parent="1" value="Pause" vertex="1" style="text;html=0;strokeColor=none;fillColor=#f7fafc;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="403" y="517" width="128" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="resume" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=block;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;exitX=1;exitY=0.781;exitDx=0;exitDy=0;entryX=0;entryY=0.781;entryDx=0;entryDy=0;" source="node-paused" target="node-playing">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="367" y="600" as="sourcePoint" />
+            <mxPoint x="568" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="resume-caption" parent="1" value="Fortsett" vertex="1" style="text;html=0;strokeColor=none;fillColor=#f7fafc;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="403" y="601" width="128" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="end-run" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=block;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;exitX=1;exitY=0.219;exitDx=0;exitDy=0;entryX=0;entryY=0.219;entryDx=0;entryDy=0;" source="node-playing" target="node-result">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="882" y="541" as="sourcePoint" />
+            <mxPoint x="1085" y="541" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="end-run-caption" parent="1" value="Velt / tom tank" vertex="1" style="text;html=0;strokeColor=none;fillColor=#f7fafc;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="908" y="516" width="152" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="again" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=block;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;exitX=0;exitY=0.781;exitDx=0;exitDy=0;entryX=1;entryY=0.781;entryDx=0;entryDy=0;" source="node-result" target="node-playing">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1085" y="600" as="sourcePoint" />
+            <mxPoint x="882" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="again-caption" parent="1" value="Kjør igjen / slå turen" vertex="1" style="text;html=0;strokeColor=none;fillColor=#f7fafc;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="891" y="601" width="184" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="result-menu" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=block;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;exitX=0.913;exitY=1;exitDx=0;exitDy=0;entryX=0.927;entryY=0;entryDx=0;entryDy=0;" source="node-result" target="node-menu">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1348" y="623" as="sourcePoint" />
+            <mxPoint x="859" y="249" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1348" y="715" />
+              <mxPoint x="1412" y="715" />
+              <mxPoint x="1412" y="209" />
+              <mxPoint x="859" y="209" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="result-menu-caption" parent="1" value="Til hovedmeny" vertex="1" style="text;html=0;strokeColor=none;fillColor=#f7fafc;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1020" y="187" width="184" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="pause-finish" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=block;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;exitX=0.505;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" source="node-paused" target="node-result">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="225" y="623" as="sourcePoint" />
+            <mxPoint x="1229" y="623" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="225" y="686" />
+              <mxPoint x="1229" y="686" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pause-finish-caption" parent="1" value="Avslutt turen" vertex="1" style="text;html=0;strokeColor=none;fillColor=#f7fafc;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="647" y="662" width="156" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="footer-rule" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#c9d8e4;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="72" y="749" as="sourcePoint" />
+            <mxPoint x="1378" y="749" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-note" parent="1" value="Begge modusene bruker samme tilstander. Fjellpost gir i tillegg pakkeskade og leveringer under kjøring." vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=16;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="72" y="769" width="1260" height="28" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="peakbound-3" name="Spøkelsesbil og lagring av tur">
+    <mxGraphModel grid="0" gridSize="10" dx="1450" dy="1160" guides="1" tooltips="1" connect="1" page="1" pageScale="1" pageWidth="1450" pageHeight="1160" background="#f7fafc">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="node-player" value="" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=6;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=#e4f1fb;strokeColor=#225475;">
+          <mxGeometry as="geometry" x="87" y="207" width="190" height="48" />
+        </mxCell>
+        <mxCell id="node-game" value="" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=6;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=#e4f1fb;strokeColor=#225475;">
+          <mxGeometry as="geometry" x="362" y="207" width="190" height="48" />
+        </mxCell>
+        <mxCell id="node-store" value="" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=6;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=#fff3de;strokeColor=#885127;">
+          <mxGeometry as="geometry" x="637" y="207" width="190" height="48" />
+        </mxCell>
+        <mxCell id="node-ghost" value="" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=6;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=#fff3de;strokeColor=#885127;">
+          <mxGeometry as="geometry" x="912" y="533" width="190" height="48" />
+        </mxCell>
+        <mxCell id="node-run" value="" vertex="1" parent="1" style="rounded=1;absoluteArcSize=1;arcSize=6;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=#e4f1fb;strokeColor=#225475;">
+          <mxGeometry as="geometry" x="1187" y="492" width="190" height="48" />
+        </mxCell>
+        <mxCell id="eyebrow" parent="1" value="PEAKBOUND  /  IT2" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=14;fontColor=#216359;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="72" y="34" width="620" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" value="Spøkelsesbil og lagring av tur" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=42;fontColor=#173042;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="69" y="61" width="1310" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" value="Spilleren velger et opptak. Spillet spiller det av samtidig som det registrerer den nye turen." vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=18;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="72" y="124" width="1305" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="header-rule" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#c9d8e4;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="72" y="172" as="sourcePoint" />
+            <mxPoint x="1378" y="172" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="folio" parent="1" value="3 / 3" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=right;spacing=0;fontFamily=Segoe UI;fontSize=14;fontColor=#415d72;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="1285" y="37" width="92" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="node-player-label" parent="node-player" value="Spiller" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=19;fontColor=#173042;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="2" y="3" width="186" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="life-player" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#9fb4c4;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=none;startFill=1;dashed=1;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="182" y="255" as="sourcePoint" />
+            <mxPoint x="182" y="1054" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="node-game-label" parent="node-game" value="Game" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=19;fontColor=#173042;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="2" y="3" width="186" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="life-game" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#9fb4c4;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=none;startFill=1;dashed=1;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="457" y="255" as="sourcePoint" />
+            <mxPoint x="457" y="1054" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="node-store-label" parent="node-store" value="ProgressStore" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=19;fontColor=#173042;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="2" y="3" width="186" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="life-store" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#9fb4c4;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=none;startFill=1;dashed=1;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="732" y="255" as="sourcePoint" />
+            <mxPoint x="732" y="1054" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="node-ghost-label" parent="node-ghost" value="GhostReplay" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=19;fontColor=#173042;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="2" y="3" width="186" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="life-ghost" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#9fb4c4;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=none;startFill=1;dashed=1;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1007" y="581" as="sourcePoint" />
+            <mxPoint x="1007" y="1054" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="node-run-label" parent="node-run" value="Run" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=19;fontColor=#173042;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="2" y="3" width="186" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="life-run" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#9fb4c4;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=none;startFill=1;dashed=1;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1282" y="540" as="sourcePoint" />
+            <mxPoint x="1282" y="1054" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="history" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=block;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="182" y="299" as="sourcePoint" />
+            <mxPoint x="457" y="299" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="history-label" parent="1" value="Åpne tidligere turer" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="189" y="275" width="261" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="records" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=block;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="457" y="344" as="sourcePoint" />
+            <mxPoint x="732" y="344" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="records-label" parent="1" value="records(world, mode)" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="464" y="320" width="261" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="records-reply" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#216359;strokeWidth=1.6;endArrow=open;endFill=1;startArrow=none;startFill=1;dashed=1;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="732" y="390" as="sourcePoint" />
+            <mxPoint x="457" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="records-reply-label" parent="1" value="Tidligere turer" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="464" y="366" width="261" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="select" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=block;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="182" y="433" as="sourcePoint" />
+            <mxPoint x="457" y="433" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="select-label" parent="1" value="Velg opptak" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="189" y="409" width="261" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="start-run" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=block;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="182" y="475" as="sourcePoint" />
+            <mxPoint x="457" y="475" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="start-run-label" parent="1" value="Start kjøring" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="189" y="451" width="261" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="create-run" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=open;endFill=1;startArrow=none;startFill=1;dashed=1;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="457" y="516" as="sourcePoint" />
+            <mxPoint x="1187" y="516" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="create-run-label" parent="1" value="«create» Run(…) og start opptak" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="464" y="492" width="716" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="ghost" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=open;endFill=1;startArrow=none;startFill=1;dashed=1;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="457" y="557" as="sourcePoint" />
+            <mxPoint x="912" y="557" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ghost-label" parent="1" value="«create» GhostReplay(record.frames)" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="464" y="533" width="441" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="loop" parent="1" value="" vertex="1" style="rounded=0;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=none;strokeColor=#c9d8e4;">
+          <mxGeometry x="396" y="580" width="950" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="loop-kind" parent="1" value="loop" vertex="1" style="text;html=0;strokeColor=none;fillColor=#e4f1fb;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=14;fontColor=#225475;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="397" y="581" width="73" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="loop-condition" parent="1" value="[mens turen pågår]" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=14;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="481" y="582" width="856" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="step" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=block;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="457" y="630" as="sourcePoint" />
+            <mxPoint x="1282" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="step-label" parent="1" value="step(dt, keys) → oppdater bilen og opptaket" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="464" y="606" width="811" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="pose" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=block;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="457" y="684" as="sourcePoint" />
+            <mxPoint x="1007" y="684" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pose-label" parent="1" value="pose_at(elapsed) → posisjonen på samme tidspunkt" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="464" y="660" width="536" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="save" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#225475;strokeWidth=1.6;endArrow=block;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="457" y="797" as="sourcePoint" />
+            <mxPoint x="732" y="797" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="save-label" parent="1" value="save_run(…)" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="464" y="773" width="261" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="finish-note" parent="1" value="Etter en tur på minst ett sekund eller med opptjente mynter klargjør Game opptaket." vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=14;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="463" y="737" width="830" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="save-alt" parent="1" value="" vertex="1" style="rounded=0;html=0;whiteSpace=wrap;strokeWidth=1.5;fillColor=none;strokeColor=#c9d8e4;">
+          <mxGeometry x="109" y="826" width="714" height="212" as="geometry" />
+        </mxCell>
+        <mxCell id="save-alt-kind" parent="1" value="alt" vertex="1" style="text;html=0;strokeColor=none;fillColor=#e4f1fb;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=14;fontColor=#225475;fontStyle=1;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="110" y="827" width="73" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="save-alt-condition" parent="1" value="[lagring lykkes]" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=14;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="194" y="828" width="620" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="save-alt-split" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#c9d8e4;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=none;startFill=1;dashed=1;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="109" y="928" as="sourcePoint" />
+            <mxPoint x="823" y="928" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="success" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#216359;strokeWidth=1.6;endArrow=open;endFill=1;startArrow=none;startFill=1;dashed=1;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="732" y="886" as="sourcePoint" />
+            <mxPoint x="457" y="886" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="success-label" parent="1" value="RunRecord" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="464" y="862" width="261" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="show-result" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#216359;strokeWidth=1.6;endArrow=open;endFill=1;startArrow=none;startFill=1;dashed=1;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="457" y="921" as="sourcePoint" />
+            <mxPoint x="182" y="921" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="show-result-label" parent="1" value="Vis resultat og rekord" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="189" y="897" width="261" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="save-alt-err" parent="1" value="[skrivefeil]" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=14;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="123" y="936" width="150" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="failure" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#216359;strokeWidth=1.6;endArrow=open;endFill=1;startArrow=none;startFill=1;dashed=1;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="732" y="981" as="sourcePoint" />
+            <mxPoint x="457" y="981" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="failure-label" parent="1" value="Ingen lagret tur" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="464" y="957" width="261" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="show-error" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#216359;strokeWidth=1.6;endArrow=open;endFill=1;startArrow=none;startFill=1;dashed=1;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="457" y="1022" as="sourcePoint" />
+            <mxPoint x="182" y="1022" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="show-error-label" parent="1" value="Vis lagringsfeil" vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;fontFamily=Segoe UI;fontSize=15;fontColor=#173042;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="189" y="998" width="261" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="footer-rule" parent="1" edge="1" style="noEdgeStyle=1;rounded=0;orthogonal=1;html=0;strokeColor=#c9d8e4;strokeWidth=1.6;endArrow=none;endFill=1;startArrow=none;startFill=1;dashed=0;dashPattern=6 5;fontFamily=Segoe UI;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="72" y="1075" as="sourcePoint" />
+            <mxPoint x="1378" y="1075" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="explanation" parent="1" value="Spøkelsesbilen tegnes med posisjon og vinkel fra opptaket. Det er Run som håndterer spillerens kollisjoner og mynter." vertex="1" style="text;html=0;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;fontFamily=Segoe UI;fontSize=16;fontColor=#415d72;fontStyle=0;whiteSpace=nowrap;connectable=0;">
+          <mxGeometry x="72" y="1094" width="1320" height="24" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

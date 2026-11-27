@@ -1,0 +1,647 @@
+{
+  "schema_version": 1,
+  "art_direction_brief": "docs/art-direction.md",
+  "assets": [
+    {
+      "id": "Ridge",
+      "path": "assets/vehicles/Ridge.png",
+      "role": "bilkarosseri",
+      "status": "integrert",
+      "technical": {
+        "dimensions": "64x32",
+        "alpha": true,
+        "anchor": "senter; hjul 24 px under (ved 2x)",
+        "frames": 1,
+        "filtering": "nearest",
+        "colors_including_alpha": 11
+      },
+      "source": {
+        "kind": "original-pixel-art",
+        "tool": "Pillow / academic-skill pixel_art.py",
+        "creator": "Codex for Peakbound",
+        "created_at": "2026-11-27",
+        "license": "Originalt prosjektbidrag. Vilkår følger prosjektets videre lisensvalg."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "Tinde",
+      "path": "assets/vehicles/Tinde.png",
+      "role": "bilkarosseri",
+      "status": "integrert",
+      "technical": {
+        "dimensions": "64x32",
+        "alpha": true,
+        "anchor": "senter; hjul 24 px under (ved 2x)",
+        "frames": 1,
+        "filtering": "nearest",
+        "colors_including_alpha": 11
+      },
+      "source": {
+        "kind": "original-pixel-art",
+        "tool": "Pillow / academic-skill pixel_art.py",
+        "creator": "Codex for Peakbound",
+        "created_at": "2026-11-27",
+        "license": "Originalt prosjektbidrag. Vilkår følger prosjektets videre lisensvalg."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "Fjellhjul",
+      "path": "assets/vehicles/Fjellhjul.png",
+      "role": "hjul",
+      "status": "integrert",
+      "technical": {
+        "dimensions": "13x13",
+        "alpha": true,
+        "anchor": "hjulsenter",
+        "frames": 1,
+        "filtering": "nearest",
+        "colors_including_alpha": 6
+      },
+      "source": {
+        "kind": "original-pixel-art",
+        "tool": "Pillow / academic-skill pixel_art.py",
+        "creator": "Codex for Peakbound",
+        "created_at": "2026-11-27",
+        "license": "Originalt prosjektbidrag. Vilkår følger prosjektets videre lisensvalg."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "Mynt",
+      "path": "assets/pickups/mynt.png",
+      "role": "belønning",
+      "status": "integrert",
+      "technical": {
+        "dimensions": "16x16",
+        "alpha": true,
+        "anchor": "senter",
+        "frames": 1,
+        "filtering": "nearest",
+        "colors_including_alpha": 6
+      },
+      "source": {
+        "kind": "original-pixel-art",
+        "tool": "Pillow / academic-skill pixel_art.py",
+        "creator": "Codex for Peakbound",
+        "created_at": "2026-11-27",
+        "license": "Originalt prosjektbidrag. Vilkår følger prosjektets videre lisensvalg."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "Drivstoffkanne",
+      "path": "assets/pickups/drivstoff.png",
+      "role": "påfyll",
+      "status": "integrert",
+      "technical": {
+        "dimensions": "16x20",
+        "alpha": true,
+        "anchor": "senter",
+        "frames": 1,
+        "filtering": "nearest",
+        "colors_including_alpha": 8
+      },
+      "source": {
+        "kind": "original-pixel-art",
+        "tool": "Pillow / academic-skill pixel_art.py",
+        "creator": "Codex for Peakbound",
+        "created_at": "2026-11-27",
+        "license": "Originalt prosjektbidrag. Vilkår følger prosjektets videre lisensvalg."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "Pakke",
+      "path": "assets/pickups/pakke.png",
+      "role": "last",
+      "status": "integrert",
+      "technical": {
+        "dimensions": "20x16",
+        "alpha": true,
+        "anchor": "senter",
+        "frames": 1,
+        "filtering": "nearest",
+        "colors_including_alpha": 6
+      },
+      "source": {
+        "kind": "original-pixel-art",
+        "tool": "Pillow / academic-skill pixel_art.py",
+        "creator": "Codex for Peakbound",
+        "created_at": "2026-11-27",
+        "license": "Originalt prosjektbidrag. Vilkår følger prosjektets videre lisensvalg."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "Skadet pakke",
+      "path": "assets/pickups/pakke-skadet.png",
+      "role": "last med ett gjenværende treff",
+      "status": "integrert",
+      "technical": {
+        "dimensions": "20x16",
+        "alpha": true,
+        "anchor": "senter",
+        "frames": 1,
+        "filtering": "nearest",
+        "colors_including_alpha": 7
+      },
+      "source": {
+        "kind": "original-pixel-art",
+        "tool": "Pillow / academic-skill pixel_art.py",
+        "creator": "Codex for Peakbound",
+        "created_at": "2026-11-27",
+        "license": "Originalt prosjektbidrag. Vilkår følger prosjektets videre lisensvalg."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "Posthytte",
+      "path": "assets/pickups/posthytte.png",
+      "role": "leveringssted",
+      "status": "integrert",
+      "technical": {
+        "dimensions": "56x44",
+        "alpha": true,
+        "anchor": "bakkekontakt i midten nederst",
+        "frames": 1,
+        "filtering": "nearest",
+        "colors_including_alpha": 11
+      },
+      "source": {
+        "kind": "original-pixel-art",
+        "tool": "Pillow / academic-skill pixel_art.py",
+        "creator": "Codex for Peakbound",
+        "created_at": "2026-11-27",
+        "license": "Originalt prosjektbidrag. Vilkår følger prosjektets videre lisensvalg."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "native_scale_reviewed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "terrain-ground",
+      "path": "assets/stages/terrain-ground.png",
+      "role": "Fjellveien-miljø",
+      "status": "eksisterende lokal ressurs",
+      "technical": {
+        "dimensions": "512x512",
+        "alpha": false,
+        "frames": 1
+      },
+      "source": {
+        "kind": "vedlagt-spillressurs",
+        "creator": "Fingersoft",
+        "from": "brukerens Peakbound/assets/stages",
+        "license": "Vilkår for videre distribusjon ikke dokumentert i vedleggene."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "terrain-surface",
+      "path": "assets/stages/terrain-surface.png",
+      "role": "Fjellveien-miljø",
+      "status": "eksisterende lokal ressurs",
+      "technical": {
+        "dimensions": "512x32",
+        "alpha": true,
+        "frames": 1
+      },
+      "source": {
+        "kind": "vedlagt-spillressurs",
+        "creator": "Fingersoft",
+        "from": "brukerens Peakbound/assets/stages",
+        "license": "Vilkår for videre distribusjon ikke dokumentert i vedleggene."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "sky-cloud",
+      "path": "assets/scenery/sky-cloud.png",
+      "role": "Fjellveien-miljø",
+      "status": "eksisterende lokal ressurs",
+      "technical": {
+        "dimensions": "200x133",
+        "alpha": true,
+        "frames": 1
+      },
+      "source": {
+        "kind": "vedlagt-spillressurs",
+        "creator": "Fingersoft",
+        "from": "OLD.zip / Everything/sky-cloud.png",
+        "license": "Vilkår for videre distribusjon ikke dokumentert i vedleggene."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "tree-part1",
+      "path": "assets/scenery/tree-part1.png",
+      "role": "Fjellveien-miljø",
+      "status": "eksisterende lokal ressurs",
+      "technical": {
+        "dimensions": "128x64",
+        "alpha": true,
+        "frames": 1
+      },
+      "source": {
+        "kind": "vedlagt-spillressurs",
+        "creator": "Fingersoft",
+        "from": "OLD.zip / Everything/tree-part1.png",
+        "license": "Vilkår for videre distribusjon ikke dokumentert i vedleggene."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "tree-part2",
+      "path": "assets/scenery/tree-part2.png",
+      "role": "Fjellveien-miljø",
+      "status": "eksisterende lokal ressurs",
+      "technical": {
+        "dimensions": "128x64",
+        "alpha": true,
+        "frames": 1
+      },
+      "source": {
+        "kind": "vedlagt-spillressurs",
+        "creator": "Fingersoft",
+        "from": "OLD.zip / Everything/tree-part2.png",
+        "license": "Vilkår for videre distribusjon ikke dokumentert i vedleggene."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "rock-small",
+      "path": "assets/scenery/rock-small.png",
+      "role": "Fjellveien-miljø",
+      "status": "eksisterende lokal ressurs",
+      "technical": {
+        "dimensions": "128x74",
+        "alpha": true,
+        "frames": 1
+      },
+      "source": {
+        "kind": "vedlagt-spillressurs",
+        "creator": "Fingersoft",
+        "from": "assets.zip / assets/stages/jungle/rock-small.png",
+        "license": "Vilkår for videre distribusjon ikke dokumentert i vedleggene."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "action-bush",
+      "path": "assets/scenery/action-bush.png",
+      "role": "Fjellveien-miljø",
+      "status": "eksisterende lokal ressurs",
+      "technical": {
+        "dimensions": "278x128",
+        "alpha": true,
+        "frames": 1
+      },
+      "source": {
+        "kind": "vedlagt-spillressurs",
+        "creator": "Fingersoft",
+        "from": "assets.zip / assets/stages/actionhero/action-bush.png",
+        "license": "Vilkår for videre distribusjon ikke dokumentert i vedleggene."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "super-countryside-day-sky",
+      "path": "assets/scenery/super-countryside-day-sky.png",
+      "role": "Fjellveien-miljø",
+      "status": "eksisterende lokal ressurs",
+      "technical": {
+        "dimensions": "1024x512",
+        "alpha": false,
+        "frames": 1
+      },
+      "source": {
+        "kind": "vedlagt-spillressurs",
+        "creator": "Fingersoft",
+        "from": "assets.zip / assets/stages/super_countryside/super-countryside-day-sky.png",
+        "license": "Vilkår for videre distribusjon ikke dokumentert i vedleggene."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "super-countryside-day-parallax",
+      "path": "assets/scenery/super-countryside-day-parallax.png",
+      "role": "Fjellveien-miljø",
+      "status": "eksisterende lokal ressurs",
+      "technical": {
+        "dimensions": "1024x512",
+        "alpha": true,
+        "frames": 1
+      },
+      "source": {
+        "kind": "vedlagt-spillressurs",
+        "creator": "Fingersoft",
+        "from": "assets.zip / assets/stages/super_countryside/super-countryside-day-parallax.png",
+        "license": "Vilkår for videre distribusjon ikke dokumentert i vedleggene."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "super-countryside-day-parallax2",
+      "path": "assets/scenery/super-countryside-day-parallax2.png",
+      "role": "Fjellveien-miljø",
+      "status": "eksisterende lokal ressurs",
+      "technical": {
+        "dimensions": "1024x512",
+        "alpha": true,
+        "frames": 1
+      },
+      "source": {
+        "kind": "vedlagt-spillressurs",
+        "creator": "Fingersoft",
+        "from": "assets.zip / assets/stages/super_countryside/super-countryside-day-parallax2.png",
+        "license": "Vilkår for videre distribusjon ikke dokumentert i vedleggene."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "scenery-runtime-art",
+      "path": "game/scenery.py",
+      "role": "himmel, fjellsilhuetter, skyer og uformelle miljøobjekter",
+      "status": "integrert",
+      "source": {
+        "kind": "original-pixel-rendering",
+        "tool": "Pygame",
+        "creator": "Codex for Peakbound",
+        "created_at": "2026-11-27",
+        "license": "Originalt prosjektbidrag. Vilkår følger prosjektets videre lisensvalg."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "terrain-runtime-art",
+      "path": "game/terrain.py",
+      "role": "banetekstur og grunnelag",
+      "status": "integrert",
+      "source": {
+        "kind": "original-pixel-rendering",
+        "tool": "Pygame",
+        "creator": "Codex for Peakbound",
+        "created_at": "2026-11-27",
+        "license": "Originalt prosjektbidrag. Vilkår følger prosjektets videre lisensvalg."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "instruments-meter-rpm",
+      "path": "assets/instruments/meter-rpm.png",
+      "role": "skive for speedometer",
+      "status": "integrert lokalt",
+      "technical": {
+        "dimensions": "256x256",
+        "alpha": true,
+        "frames": 1
+      },
+      "source": {
+        "kind": "vedlagt-spillressurs",
+        "creator": "Fingersoft",
+        "from": "assets.zip / assets/meter-rpm.png",
+        "license": "Vilkår for videre distribusjon ikke dokumentert i vedleggene."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "instruments-meter-needle",
+      "path": "assets/instruments/meter-needle.png",
+      "role": "viser",
+      "status": "integrert lokalt",
+      "technical": {
+        "dimensions": "32x128",
+        "alpha": true,
+        "frames": 1
+      },
+      "source": {
+        "kind": "vedlagt-spillressurs",
+        "creator": "Fingersoft",
+        "from": "assets.zip / assets/meter-needle.png",
+        "license": "Vilkår for videre distribusjon ikke dokumentert i vedleggene."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "instruments-distance-icon",
+      "path": "assets/instruments/distance-icon.png",
+      "role": "distanseikon",
+      "status": "integrert lokalt",
+      "technical": {
+        "dimensions": "64x64",
+        "alpha": true,
+        "frames": 1
+      },
+      "source": {
+        "kind": "vedlagt-spillressurs",
+        "creator": "Fingersoft",
+        "from": "assets.zip / assets/distance-icon.png",
+        "license": "Vilkår for videre distribusjon ikke dokumentert i vedleggene."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "instruments-coin-icon",
+      "path": "assets/instruments/coin-icon.png",
+      "role": "myntikon",
+      "status": "integrert lokalt",
+      "technical": {
+        "dimensions": "64x64",
+        "alpha": true,
+        "frames": 1
+      },
+      "source": {
+        "kind": "vedlagt-spillressurs",
+        "creator": "Fingersoft",
+        "from": "assets.zip / assets/coin-icon.png",
+        "license": "Vilkår for videre distribusjon ikke dokumentert i vedleggene."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "instruments-fuel-icon",
+      "path": "assets/instruments/fuel-icon.png",
+      "role": "tankikon",
+      "status": "integrert lokalt",
+      "technical": {
+        "dimensions": "64x64",
+        "alpha": true,
+        "frames": 1
+      },
+      "source": {
+        "kind": "vedlagt-spillressurs",
+        "creator": "Fingersoft",
+        "from": "assets.zip / assets/fuel-icon.png",
+        "license": "Vilkår for videre distribusjon ikke dokumentert i vedleggene."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "instruments-progressbar-bg",
+      "path": "assets/instruments/progressbar-bg.png",
+      "role": "ramme til tankmåler",
+      "status": "integrert lokalt",
+      "technical": {
+        "dimensions": "128x32",
+        "alpha": true,
+        "frames": 1
+      },
+      "source": {
+        "kind": "vedlagt-spillressurs",
+        "creator": "Fingersoft",
+        "from": "assets.zip / assets/progressbar-bg.png",
+        "license": "Vilkår for videre distribusjon ikke dokumentert i vedleggene."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "menu-start-flag",
+      "path": "assets/menu/start-flag.png",
+      "role": "startknapp",
+      "status": "integrert lokalt",
+      "technical": {
+        "dimensions": "63x46",
+        "alpha": true,
+        "frames": 1
+      },
+      "source": {
+        "kind": "vedlagt-spillressurs",
+        "creator": "Fingersoft",
+        "from": "assets.zip / assets/icon-start.png",
+        "license": "Vilkår for videre distribusjon ikke dokumentert i vedleggene."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "menu-replay-camera",
+      "path": "assets/menu/replay-camera.png",
+      "role": "turhistorikk",
+      "status": "integrert lokalt",
+      "technical": {
+        "dimensions": "64x64",
+        "alpha": true,
+        "frames": 1
+      },
+      "source": {
+        "kind": "vedlagt-spillressurs",
+        "creator": "Fingersoft",
+        "from": "assets.zip / assets/icon-replay.png",
+        "license": "Vilkår for videre distribusjon ikke dokumentert i vedleggene."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "in_engine_reviewed": true
+      }
+    },
+    {
+      "id": "menu-garage-toolbox",
+      "path": "assets/menu/garage-toolbox.png",
+      "role": "garasjeknapp",
+      "status": "integrert lokalt",
+      "technical": {
+        "dimensions": "64x45",
+        "alpha": true,
+        "frames": 1
+      },
+      "source": {
+        "kind": "vedlagt-spillressurs",
+        "creator": "Fingersoft",
+        "from": "assets.zip / assets/garage/icon_toolbox_silver.png",
+        "license": "Vilkår for videre distribusjon ikke dokumentert i vedleggene."
+      },
+      "verification": {
+        "technical_checks_passed": true,
+        "in_engine_reviewed": true
+      }
+    }
+  ]
+}
