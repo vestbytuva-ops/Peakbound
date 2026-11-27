@@ -1,0 +1,56 @@
+Date : 2026-11-27 09:45:34
+Directory : c:\Users\vestb\Downloads\Peakbound
+Total : 24 files,  576 codes, 16 comments, 138 blanks, all 730 lines
+
+Languages
++------------------+------------+------------+------------+------------+------------+
+| language         | files      | code       | comment    | blank      | total      |
++------------------+------------+------------+------------+------------+------------+
+| Python           |         17 |        485 |         16 |         95 |        596 |
+| Markdown         |          4 |         91 |          0 |         40 |        131 |
+| pip requirements |          1 |          0 |          0 |          1 |          1 |
+| JSON             |          2 |          0 |          0 |          2 |          2 |
++------------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                    | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                       |         24 |        576 |         16 |        138 |        730 |
+| . (Files)                                               |         10 |        196 |          0 |         67 |        263 |
+| data                                                    |          1 |          0 |          0 |          1 |          1 |
+| docs                                                    |          3 |          0 |          0 |          3 |          3 |
+| game                                                    |          9 |        380 |         16 |         66 |        462 |
+| saves                                                   |          1 |          0 |          0 |          1 |          1 |
++---------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------+------------------+------------+------------+------------+------------+
+| filename                                                | language         | code       | comment    | blank      | total      |
++---------------------------------------------------------+------------------+------------+------------+------------+------------+
+| c:\Users\vestb\Downloads\Peakbound\README.md            | Markdown         |         91 |          0 |         37 |        128 |
+| c:\Users\vestb\Downloads\Peakbound\array.py             | Python           |         13 |          0 |          2 |         15 |
+| c:\Users\vestb\Downloads\Peakbound\data\vehicle.json    | JSON             |          0 |          0 |          1 |          1 |
+| c:\Users\vestb\Downloads\Peakbound\docs\architecture.md | Markdown         |          0 |          0 |          1 |          1 |
+| c:\Users\vestb\Downloads\Peakbound\docs\development.md  | Markdown         |          0 |          0 |          1 |          1 |
+| c:\Users\vestb\Downloads\Peakbound\docs\physics.md      | Markdown         |          0 |          0 |          1 |          1 |
+| c:\Users\vestb\Downloads\Peakbound\eksamen.py           | Python           |         16 |          0 |          3 |         19 |
+| c:\Users\vestb\Downloads\Peakbound\eksamen1.py          | Python           |         10 |          0 |          0 |         10 |
+| c:\Users\vestb\Downloads\Peakbound\game\__init__.py     | Python           |          0 |          0 |          1 |          1 |
+| c:\Users\vestb\Downloads\Peakbound\game\camera.py       | Python           |         11 |          1 |          4 |         16 |
+| c:\Users\vestb\Downloads\Peakbound\game\game.py         | Python           |         33 |          1 |         10 |         44 |
+| c:\Users\vestb\Downloads\Peakbound\game\physics.py      | Python           |          0 |          0 |          1 |          1 |
+| c:\Users\vestb\Downloads\Peakbound\game\player.py       | Python           |          0 |          0 |          1 |          1 |
+| c:\Users\vestb\Downloads\Peakbound\game\scenery.py      | Python           |         75 |          0 |         13 |         88 |
+| c:\Users\vestb\Downloads\Peakbound\game\terrain.py      | Python           |        114 |          6 |         15 |        135 |
+| c:\Users\vestb\Downloads\Peakbound\game\ui.py           | Python           |          0 |          0 |          1 |          1 |
+| c:\Users\vestb\Downloads\Peakbound\game\vehicle.py      | Python           |        147 |          8 |         20 |        175 |
+| c:\Users\vestb\Downloads\Peakbound\main.py              | Python           |         33 |          0 |         15 |         48 |
+| c:\Users\vestb\Downloads\Peakbound\oop.py               | Python           |         24 |          0 |          3 |         27 |
+| c:\Users\vestb\Downloads\Peakbound\requirements.txt     | pip requirements |          0 |          0 |          1 |          1 |
+| c:\Users\vestb\Downloads\Peakbound\saves\saves.json     | JSON             |          0 |          0 |          1 |          1 |
+| c:\Users\vestb\Downloads\Peakbound\settings.py          | Python           |          0 |          0 |          1 |          1 |
+| c:\Users\vestb\Downloads\Peakbound\trig.py              | Python           |          0 |          0 |          1 |          1 |
+| c:\Users\vestb\Downloads\Peakbound\vector.py            | Python           |          9 |          0 |          4 |         13 |
+| Total                                                   |                  |        576 |         16 |        138 |        730 |
++---------------------------------------------------------+------------------+------------+------------+------------+------------+

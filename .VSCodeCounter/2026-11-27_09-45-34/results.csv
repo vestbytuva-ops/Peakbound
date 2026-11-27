@@ -1,0 +1,26 @@
+"filename", "language", "Python", "pip requirements", "Markdown", "JSON", "comment", "blank", "total"
+"c:\Users\vestb\Downloads\Peakbound\README.md", "Markdown", 0, 0, 91, 0, 0, 37, 128
+"c:\Users\vestb\Downloads\Peakbound\array.py", "Python", 13, 0, 0, 0, 0, 2, 15
+"c:\Users\vestb\Downloads\Peakbound\data\vehicle.json", "JSON", 0, 0, 0, 0, 0, 1, 1
+"c:\Users\vestb\Downloads\Peakbound\docs\architecture.md", "Markdown", 0, 0, 0, 0, 0, 1, 1
+"c:\Users\vestb\Downloads\Peakbound\docs\development.md", "Markdown", 0, 0, 0, 0, 0, 1, 1
+"c:\Users\vestb\Downloads\Peakbound\docs\physics.md", "Markdown", 0, 0, 0, 0, 0, 1, 1
+"c:\Users\vestb\Downloads\Peakbound\eksamen.py", "Python", 16, 0, 0, 0, 0, 3, 19
+"c:\Users\vestb\Downloads\Peakbound\eksamen1.py", "Python", 10, 0, 0, 0, 0, 0, 10
+"c:\Users\vestb\Downloads\Peakbound\game\__init__.py", "Python", 0, 0, 0, 0, 0, 1, 1
+"c:\Users\vestb\Downloads\Peakbound\game\camera.py", "Python", 11, 0, 0, 0, 1, 4, 16
+"c:\Users\vestb\Downloads\Peakbound\game\game.py", "Python", 33, 0, 0, 0, 1, 10, 44
+"c:\Users\vestb\Downloads\Peakbound\game\physics.py", "Python", 0, 0, 0, 0, 0, 1, 1
+"c:\Users\vestb\Downloads\Peakbound\game\player.py", "Python", 0, 0, 0, 0, 0, 1, 1
+"c:\Users\vestb\Downloads\Peakbound\game\scenery.py", "Python", 75, 0, 0, 0, 0, 13, 88
+"c:\Users\vestb\Downloads\Peakbound\game\terrain.py", "Python", 114, 0, 0, 0, 6, 15, 135
+"c:\Users\vestb\Downloads\Peakbound\game\ui.py", "Python", 0, 0, 0, 0, 0, 1, 1
+"c:\Users\vestb\Downloads\Peakbound\game\vehicle.py", "Python", 147, 0, 0, 0, 8, 20, 175
+"c:\Users\vestb\Downloads\Peakbound\main.py", "Python", 33, 0, 0, 0, 0, 15, 48
+"c:\Users\vestb\Downloads\Peakbound\oop.py", "Python", 24, 0, 0, 0, 0, 3, 27
+"c:\Users\vestb\Downloads\Peakbound\requirements.txt", "pip requirements", 0, 0, 0, 0, 0, 1, 1
+"c:\Users\vestb\Downloads\Peakbound\saves\saves.json", "JSON", 0, 0, 0, 0, 0, 1, 1
+"c:\Users\vestb\Downloads\Peakbound\settings.py", "Python", 0, 0, 0, 0, 0, 1, 1
+"c:\Users\vestb\Downloads\Peakbound\trig.py", "Python", 0, 0, 0, 0, 0, 1, 1
+"c:\Users\vestb\Downloads\Peakbound\vector.py", "Python", 9, 0, 0, 0, 0, 4, 13
+"Total", "-", 485, 0, 91, 0, 16, 138, 730
