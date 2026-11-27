@@ -1,16 +1,48 @@
 import math
+from dataclasses import dataclass
+from functools import lru_cache
 from pathlib import Path
 
 import pygame as pg
 
 
+@dataclass(frozen=True)
+class VehicleSpec:
+    name: str
+    image: str
+    description: str
+    power: float
+    speed: float
+    grip: float
+    fuel_use: float
+
+
+VEHICLES = {
+    "ridge": VehicleSpec("Ridge", "Ridge.png", "Lett bil med høy toppfart.", 470, 510, 1.0, 1.0),
+    "tinde": VehicleSpec("Tinde", "Tinde.png", "Sterk i bakker. Bruker mer drivstoff.", 565, 465, 1.20, 1.16),
+}
+
+
+@lru_cache(maxsize=4)
+def _sprite(filename, size):
+    folder = Path(__file__).resolve().parents[1] / "assets" / "vehicles"
+    return pg.transform.scale(pg.image.load(folder / filename).convert_alpha(), size)
+
+
+@lru_cache(maxsize=4)
+def _ghost_sprite(filename, size):
+    image = _sprite(filename, size).copy()
+    # Fargelås for spøkelsesbilen. Bevar lyse og mørke felt og eksisterende alfa.
+    image.fill((125, 191, 215, 255), special_flags=pg.BLEND_RGBA_MULT)
+    image.set_alpha(145)
+    return image
+
+
 class Vehicle:
     # Piksler og sekunder. Juster disse verdiene for å endre kjørefølelsen.
     GRAVITY = 620.0
-    DRIVE_ACCELERATION = 470.0
     BRAKE_ACCELERATION = 670.0
     REVERSE_ACCELERATION = 350.0
-    DRIVE_SPEED = 510.0
     REVERSE_SPEED = 190.0
     ROLLING_DRAG = 0.08
     AIR_DRAG = 0.025
@@ -18,8 +50,13 @@ class Vehicle:
     INVERSE_INERTIA = 1 / 1700
     MAX_STEP = 1 / 240
 
-    def __init__(self, x, y):
+    def __init__(self, x, y, vehicle_id="ridge", upgrades=None):
         # Bilens midtpunkt ligger i samme høyde som hjulakslingene.
+        self.spec = VEHICLES[vehicle_id]
+        levels = upgrades or {}
+        self.drive_acceleration = self.spec.power * (1 + 0.10 * levels.get("engine", 0))
+        self.drive_speed = self.spec.speed + 18 * levels.get("engine", 0)
+        self.grip = self.spec.grip * (1 + 0.10 * levels.get("grip", 0))
         self.x, self.y = float(x), float(y)
         self.velocity = pg.Vector2()
         self.angle = 0.0
@@ -27,15 +64,16 @@ class Vehicle:
         self.wheel_angle = 0.0
         self.wheel_speed = 0.0
         self.grounded = False
+        self.landing_impact = 0.0
+        self.body_contact = False
         self.wheel_radius = 13
         self.half_wheelbase = 40
         self.wheels = [(x - self.half_wheelbase, y), (x + self.half_wheelbase, y)]
 
-        folder = Path(__file__).resolve().parents[1] / "assets" / "vehicles"
-        body = pg.image.load(folder / "Car.png").convert_alpha()
-        tire = pg.image.load(folder / "Tire.png").convert_alpha()
-        self.body = pg.transform.smoothscale(body, (128, 64))
-        self.tire = pg.transform.smoothscale(tire, (26, 26))
+        self.body = _sprite(self.spec.image, (128, 64))
+        self.tire = _sprite("Fjellhjul.png", (26, 26))
+        self.ghost_body = _ghost_sprite(self.spec.image, (128, 64))
+        self.ghost_tire = _ghost_sprite("Fjellhjul.png", (26, 26))
 
     @property
     def speed(self):
@@ -94,12 +132,15 @@ class Vehicle:
                     continue
                 found_contact = True
                 grounded |= index < 2
+                self.body_contact |= index >= 2
                 offset, normal, penetration = contact
                 lever = offset.cross(normal)
                 effective_mass = 1 + lever * lever * self.INVERSE_INERTIA
                 # Bakken skyver bilen ut ved treff, men kan ikke dra den ned.
                 normal_speed = self.velocity.dot(normal) + lever * self.angular_velocity
                 if normal_speed < 0:
+                    if index < 2:
+                        self.landing_impact = max(self.landing_impact, -normal_speed)
                     impulse = -normal_speed / effective_mass
                     self.velocity += impulse * normal
                     self.angular_velocity += impulse * lever * self.INVERSE_INERTIA
@@ -121,11 +162,11 @@ class Vehicle:
                 if speed_in_direction < -8:
                     acceleration = self.BRAKE_ACCELERATION
                 else:
-                    limit = self.DRIVE_SPEED if throttle > 0 else self.REVERSE_SPEED
-                    strength = self.DRIVE_ACCELERATION if throttle > 0 else self.REVERSE_ACCELERATION
+                    limit = self.drive_speed if throttle > 0 else self.REVERSE_SPEED
+                    strength = self.drive_acceleration if throttle > 0 else self.REVERSE_ACCELERATION
                     power = max(0.0, min(1.0, (limit - speed_in_direction) / 70))
                     acceleration = strength * power
-                self.velocity += tangent * (acceleration * throttle * dt)
+                self.velocity += tangent * (acceleration * self.grip * throttle * dt)
             self.velocity *= math.exp(-self.ROLLING_DRAG * dt)
             self.angular_velocity *= math.exp(-3.6 * dt)
         else:
@@ -150,7 +191,9 @@ class Vehicle:
         gas = keys[pg.K_d] or keys[pg.K_RIGHT]
         reverse = keys[pg.K_a] or keys[pg.K_LEFT]
         throttle = int(gas) - int(reverse)
-        tilt = int(keys[pg.K_e]) - int(keys[pg.K_q])
+        tilt = int(keys[pg.K_e] or keys[pg.K_DOWN]) - int(keys[pg.K_q] or keys[pg.K_UP])
+        self.landing_impact = 0.0
+        self.body_contact = False
 
         # Små tidssteg gjør landingene stabile også ved lav bildefrekvens.
         remaining = max(0.0, min(dt, 0.05))
@@ -161,14 +204,25 @@ class Vehicle:
         self.angle = (self.angle + math.pi) % math.tau - math.pi
         self._update_wheel_positions()
 
-    def draw(self, screen, camera_x=0):
-        wheel = pg.transform.rotate(self.tire, self.wheel_angle)
-        for x, y in self.wheels:
-            center = (round(x - camera_x), round(y))
+    def pose(self):
+        return self.x, self.y, self.angle, self.wheel_angle
+
+    def draw_pose(self, screen, camera_x, pose, ghost=False):
+        x, y, angle, wheel_angle = pose
+        wheel_art = self.ghost_tire if ghost else self.tire
+        body_art = self.ghost_body if ghost else self.body
+        wheel = pg.transform.rotate(wheel_art, wheel_angle)
+        span_x = self.half_wheelbase * math.cos(angle)
+        span_y = self.half_wheelbase * math.sin(angle)
+        for direction in (-1, 1):
+            center = (round(x + direction * span_x - camera_x), round(y + direction * span_y))
             screen.blit(wheel, wheel.get_rect(center=center))
 
         # Hjulfestene ligger 24 piksler under karosseribildets midtpunkt.
-        body_x = self.x + 24 * math.sin(self.angle) - camera_x
-        body_y = self.y - 24 * math.cos(self.angle)
-        body = pg.transform.rotate(self.body, -math.degrees(self.angle))
+        body_x = x + 24 * math.sin(angle) - camera_x
+        body_y = y - 24 * math.cos(angle)
+        body = pg.transform.rotate(body_art, -math.degrees(angle))
         screen.blit(body, body.get_rect(center=(round(body_x), round(body_y))))
+
+    def draw(self, screen, camera_x=0):
+        self.draw_pose(screen, camera_x, self.pose())
